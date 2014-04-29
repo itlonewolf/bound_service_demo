@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+		>
+
+	<Button
+			android:layout_width="120dp"
+			android:layout_height="wrap_content"
+			android:text="bind"
+			android:id="@+id/btnBind"
+			android:layout_below="@+id/textView"
+			android:layout_alignParentStart="true"
+			android:layout_marginLeft="30dp"
+			android:layout_marginTop="66dp"/>
+	<Button
+			android:layout_width="120dp"
+			android:layout_height="wrap_content"
+			android:text="显示信息"
+			android:id="@+id/btnshow"
+			android:layout_alignTop="@+id/btnBind" android:layout_alignParentRight="true"
+			android:layout_marginRight="41dp"/>
+	<com.haarman.supertooltips.ToolTipRelativeLayout
+			android:id="@+id/layouttoolTip"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"/>
+	<Button
+			android:layout_width="120dp"
+			android:layout_height="wrap_content"
+			android:text="open noti"
+			android:id="@+id/btnOpen" android:layout_below="@+id/btnBind" android:layout_alignLeft="@+id/btnBind"
+			android:layout_marginTop="100dp"/>
+	<Button
+			android:layout_width="120dp"
+			android:layout_height="wrap_content"
+			android:text="close noti"
+			android:id="@+id/btnClose" android:layout_alignTop="@+id/btnOpen" android:layout_alignLeft="@+id/btnshow"/>
+</RelativeLayout>
+
